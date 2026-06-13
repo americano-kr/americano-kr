@@ -16,23 +16,34 @@ if response.status_code == 200:
         avatar_url = latest_follower['avatar_url']
 
         replacement_text = f"""<br>
-<a href="{profile_url}">
-  <img src="{avatar_url}" width="40" alt="{username}" style="border-radius:50%; align-items:center;" />
-</a> Hello, <a href="{profile_url}">**{username}**</a>! It is nice to meet you, thanks 4 following me (╹ڡ╹ )!
-"""
+
+<div align="center">
+  <a href="{profile_url}">
+    <img src="{avatar_url}" width="40" alt="{username}" style="border-radius:50%; align-items:center;" />
+  </a> Hello, <a href="{profile_url}">**{username}**</a>! It is nice to meet you, thanks 4 following me (╹ڡ╹ )!
+</div>
+
+<br>"""
 
     else:
         replacement_text = """<br>
-No followers yet. Be the first to follow me! (╹ڡ╹ )
-"""
+
+<div align="center">
+  No followers yet. Be the first to follow me! (╹ڡ╹ )
+</div>
+
+<br>"""
 
     with open("README.md", "r", encoding="utf-8") as file:
         readme_content = file.read()
 
-    # Regex sekarang mencari teks di antara kedua penanda batas secara spesifik
+    # Regex ini mencari persis dari "### Latest Follower:" sampai bagian gambar marquee
+    # \1 menyimpan "### Latest Follower:" dan \2 menyimpan bagian marquee
+    pattern = r'(### Latest Follower:).*?(<div align="center">\s*<img height="120" width="100%" src="https://raw\.githubusercontent\.com/BrunnerLivio/brunnerlivio/master/images/marquee\.svg")'
+    
     new_content = re.sub(
-        r'.*?',
-        replacement_text,
+        pattern,
+        rf'\1\n{replacement_text}\n\2',
         readme_content,
         flags=re.DOTALL
     )
