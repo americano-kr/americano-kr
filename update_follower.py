@@ -29,7 +29,7 @@ No followers yet. Be the first to follow me! (╹ڡ╹ )
     with open("README.md", "r", encoding="utf-8") as file:
         readme_content = file.read()
 
-    # PERBAIKAN DI SINI: Menggunakan .*? agar tidak merusak isi README yang lain
+    # Regex sekarang mencari teks di antara kedua penanda batas secara spesifik
     new_content = re.sub(
         r'.*?',
         replacement_text,
