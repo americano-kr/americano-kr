@@ -1,0 +1,33 @@
+name: Update Latest Follower
+
+on:
+  schedule:
+    - cron: '*/5 * * * *' # Berjalan setiap 5 menit
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Run Update Script
+        run: python update_follower.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          # Memastikan commit hanya terjadi jika ada perubahan di README
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update latest follower"
+          git push
