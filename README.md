@@ -53,6 +53,11 @@
 <br>
 
 <div align="center">
+  No followers yet. Be the first to follow me! (╹ڡ╹ )
+</div>
+
+<br>
+<div align="center">
   <img height="120" width="100%" src="https://raw.githubusercontent.com/BrunnerLivio/brunnerlivio/master/images/marquee.svg" alt="Thanks for visiting me" />
 </div>
 <br><br>
