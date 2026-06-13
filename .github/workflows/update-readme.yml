@@ -2,18 +2,24 @@ name: Update Latest Follower
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # Berjalan setiap 5 menit
+    - cron: '*/5 * * * *'
   workflow_dispatch:
+
+# TIGA BARIS INI PENTING: Memberikan izin bot untuk menyimpan perubahan
+permissions:
+  contents: write
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
+      # Diupdate ke v4 agar warning Node.js hilang
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
+      # Diupdate ke v5 agar warning Node.js hilang
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
@@ -28,6 +34,5 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add README.md
-          # Memastikan commit hanya terjadi jika ada perubahan di README
           git diff --quiet && git diff --staged --quiet || git commit -m "Update latest follower"
           git push
