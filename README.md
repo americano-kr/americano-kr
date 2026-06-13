@@ -49,6 +49,8 @@
   <img src="https://komarev.com/ghpvc/?username=americano-kr&color=blue&style=flat-square&label=VISITORS" alt="Profile Views" />
 </div>
 
+### Latest Follower:
+
 <br>
 
 <div align="center">
