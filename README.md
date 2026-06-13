@@ -53,7 +53,9 @@
 <br>
 
 <div align="center">
-  No followers yet. Be the first to follow me! (╹ڡ╹ )
+  <a href="https://github.com/vrlkvnr">
+    <img src="https://avatars.githubusercontent.com/u/293420060?v=4" width="40" alt="vrlkvnr" style="border-radius:50%; align-items:center;" />
+  </a> Hello, <a href="https://github.com/vrlkvnr">**vrlkvnr**</a>! It is nice to meet you, thanks 4 following me (╹ڡ╹ )!
 </div>
 
 <br>
