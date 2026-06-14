@@ -21,7 +21,7 @@ if response.status_code == 200:
 
 <div align="center">
   <a href="{profile_url}">
-    <img src="{avatar_url}" width="25" alt="{username}" style="border-radius: 50%; vertical-align: middle;" />
+    <img src="{avatar_url}" width="15" alt="{username}" style="border-radius: 50%; vertical-align: middle;" />
   </a> Hello, <a href="{profile_url}"><strong>{username}</strong></a>! It is nice to meet you, thanks 4 following me (╹ڡ╹ )!
 </div>
 
