@@ -53,9 +53,9 @@
 <br>
 
 <div align="center">
-  <a href="https://github.com/vrlkvnr">
-    <img src="https://avatars.githubusercontent.com/u/293420060?v=4" width="25" alt="vrlkvnr" style="border-radius: 50%; vertical-align: middle;" />
-  </a> Hello, <a href="https://github.com/vrlkvnr"><strong>vrlkvnr</strong></a>! It is nice to meet you, thanks 4 following me (╹ڡ╹ )!
+  <a href="https://github.com/faqihawalsyabani1487">
+    <img src="https://avatars.githubusercontent.com/u/228453737?v=4" width="25" alt="faqihawalsyabani1487" style="border-radius: 50%; vertical-align: middle;" />
+  </a> Hello, <a href="https://github.com/faqihawalsyabani1487"><strong>faqihawalsyabani1487</strong></a>! It is nice to meet you, thanks 4 following me (╹ڡ╹ )!
 </div>
 
 <br>
