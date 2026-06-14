@@ -54,7 +54,7 @@
 
 <div align="center">
   <a href="https://github.com/faqihawalsyabani1487">
-    <img src="https://avatars.githubusercontent.com/u/228453737?v=4" width="25" alt="faqihawalsyabani1487" style="border-radius: 50%; vertical-align: middle;" />
+    <img src="https://avatars.githubusercontent.com/u/228453737?v=4" width="15" alt="faqihawalsyabani1487" style="border-radius: 50%; vertical-align: middle;" />
   </a> Hello, <a href="https://github.com/faqihawalsyabani1487"><strong>faqihawalsyabani1487</strong></a>! It is nice to meet you, thanks 4 following me (╹ڡ╹ )!
 </div>
 
