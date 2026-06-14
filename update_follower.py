@@ -10,7 +10,7 @@ if response.status_code == 200:
     followers = response.json()
     
     if len(followers) > 0:
-        latest_follower = followers[-1]
+        latest_follower = followers[0]
         username = latest_follower['login']
         profile_url = latest_follower['html_url']
         avatar_url = latest_follower['avatar_url']
